@@ -1,9 +1,11 @@
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useEffect, useState, useRef } from 'react';
+import PartnersModal from './PartnersModal';
 
 const PartnersLogos = () => {
   const [partnerTypes, setPartnerTypes] = useState([]);
+  const [isPartnersModalOpen, setIsPartnersModalOpen] = useState(false);
   const scrollRefs = useRef({});
 
   const getPartnerLogos = async () => {
@@ -127,12 +129,22 @@ const PartnersLogos = () => {
             ))}
           </div>
           
-          <Button variant="outline" className="group">
+          <Button 
+            variant="outline" 
+            className="group"
+            onClick={() => setIsPartnersModalOpen(true)}
+          >
             View All Partners
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 smooth-transition" />
           </Button>
         </div>
       </div>
+      
+      {/* Partners Modal */}
+      <PartnersModal 
+        isOpen={isPartnersModalOpen}
+        onClose={() => setIsPartnersModalOpen(false)}
+      />
     </section>
   );
 };

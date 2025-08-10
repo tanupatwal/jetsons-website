@@ -34,8 +34,12 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 primary-gradient rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">JR</span>
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img 
+                src="/media/jetsons_logo.png" 
+                alt="Jetsons Robotics Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold text-primary">JETSONS ROBOTICS</h1>

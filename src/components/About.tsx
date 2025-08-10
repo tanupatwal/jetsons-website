@@ -16,10 +16,6 @@ const About = () => {
             </p>
           </div>
           
-          <Button variant="outline" size="lg" className="group">
-            Learn Our Story
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 smooth-transition" />
-          </Button>
         </div>
       </div>
     </section>

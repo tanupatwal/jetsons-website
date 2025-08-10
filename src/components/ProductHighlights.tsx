@@ -52,10 +52,6 @@ const ProductHighlights = () => {
               
               <CardContent className="text-center space-y-4">
                 <p className="text-muted-foreground">{product.description}</p>
-                <Button variant="outline" size="sm" className="group">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 smooth-transition" />
-                </Button>
               </CardContent>
             </Card>
           ))}

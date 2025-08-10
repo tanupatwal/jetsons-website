@@ -150,13 +150,6 @@ const Products = () => {
                   ))}
                 </div>
 
-                <Button 
-                  className="w-full group" 
-                  variant={index === 0 ? "default" : "outline"}
-                >
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 smooth-transition" />
-                </Button>
               </CardContent>
             </Card>
           ))}
