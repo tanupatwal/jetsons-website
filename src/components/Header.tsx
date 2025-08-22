@@ -15,6 +15,7 @@ const Header = () => {
     { name: 'About', href: '#about' },
     { name: 'Products', href: '#products' },
     { name: 'Demo', href: '#demo' },
+    { name: 'News', href: '/news' },
     { name: 'Media', href: '#media' },
     { name: 'Partners', href: '#partners' },
     { name: 'Contact', href: '#contact' },
@@ -25,6 +26,8 @@ const Header = () => {
     if (href.startsWith('#')) {
       const element = document.querySelector(href);
       element?.scrollIntoView({ behavior: 'smooth' });
+    } else if (href === '/news') {
+      window.location.href = '/news';
     }
   };
 
@@ -43,7 +46,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-primary">JETSONS ROBOTICS</h1>
-              <p className="text-xs text-muted-foreground">Solar Panel Cleaning Solutions</p>
+              <p className="text-xs text-muted-foreground">Solar Plant Maintenance Automation</p>
             </div>
           </div>
 

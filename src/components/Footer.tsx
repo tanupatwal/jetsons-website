@@ -12,6 +12,8 @@ const Footer = () => {
     if (href.startsWith('#')) {
       const element = document.querySelector(href);
       element?.scrollIntoView({ behavior: 'smooth' });
+    } else if (href === '/news') {
+      window.location.href = '/news';
     }
   };
 
@@ -75,6 +77,7 @@ const Footer = () => {
   const quickLinks = [
     { name: 'About', href: '#about' },
     { name: 'Demo', href: '#demo' },
+    { name: 'News', href: '/news' },
     { name: 'Contact', href: '#contact' },
     { name: 'Products', href: '#products' },
     { name: 'Partners', href: '#partners' },
@@ -99,7 +102,7 @@ const Footer = () => {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-primary">JETSONS ROBOTICS</h1>
-                <p className="text-xs text-muted-foreground">Solar Panel Cleaning Solutions</p>
+                <p className="text-xs text-muted-foreground">Solar Plant Maintenance Automation</p>
               </div>
             </div>
             

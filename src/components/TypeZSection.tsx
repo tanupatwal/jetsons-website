@@ -1,43 +1,27 @@
 const TypeZSection = () => {
   return (
-    <section className="w-screen h-screen bg-white flex flex-col">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col">
-        {/* Section Heading - Top */}
-        <div className="text-center pt-0 pb-8">
-          <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-4">TYPE Z</h2>
-          <p className="text-xl lg:text-2xl text-gray-600">ROBOTS FOR A SUSTAINABLE FUTURE</p>
-        </div>
-
-        {/* Type Z Robot Image - Center */}
-        <div className="flex-1 flex items-center justify-center">
-          <div className="text-center">
-            <img 
-              src="/type_z/zeros1img3.png" 
-              alt="Type Z Robot" 
-              className="w-full max-w-lg mx-auto rounded-xl shadow-lg"
-            />
+    <section className="w-screen min-h-screen bg-gradient-to-b from-white to-gray-50 flex flex-col justify-center py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Type Z Product Focus */}
+        <div className="text-center mb-16 max-w-5xl mx-auto">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">Type Z</h2>
+          <p className="text-xl lg:text-2xl text-gray-700 mb-6 leading-relaxed">
+            Fully autonomous waterless solar panel cleaning robot for rooftop solar installations
+          </p>
+          <div className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-full shadow-sm">
+            <span className="text-lg font-bold text-primary tracking-wide">Patented Technology</span>
           </div>
         </div>
 
-        {/* Features Grid - Bottom */}
-        <div className="pt-26">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="text-center">
-              <img src="/type_z/nowater.png" alt="Water Free Operation" className="mx-auto w-12 h-12 mb-4" />
-              <p className="text-lg font-medium text-gray-800">Water Free Operation</p>
-            </div>
-            <div className="text-center">
-              <img src="/type_z/robot.png" alt="Truly Autonomous" className="mx-auto w-12 h-12 mb-4" />
-              <p className="text-lg font-medium text-gray-800">Truly Autonomous</p>
-            </div>
-            <div className="text-center">
-              <img src="/type_z/calendar.png" alt="Smart Scheduling" className="mx-auto w-12 h-12 mb-4" />
-              <p className="text-lg font-medium text-gray-800">Smart Scheduling</p>
-            </div>
-            <div className="text-center">
-              <img src="/type_z/wireless_charging.png" alt="Auto Charging" className="mx-auto w-12 h-12 mb-4" />
-              <p className="text-lg font-medium text-gray-800">Auto Charging</p>
-            </div>
+        {/* Type Z Robot Image */}
+        <div className="text-center mb-8">
+          <div className="relative max-w-3xl mx-auto">
+            <img 
+              src="/type_z/TZ2.jpg" 
+              alt="Type Z Autonomous Solar Cleaning Robot" 
+              className="w-full rounded-2xl shadow-2xl border border-gray-200"
+            />
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/5 to-transparent"></div>
           </div>
         </div>
       </div>

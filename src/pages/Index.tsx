@@ -2,10 +2,12 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import StatsSection from '@/components/StatsSection';
 import TypeZSection from '@/components/TypeZSection';
+import FeaturesSection from '@/components/FeaturesSection';
 import About from '@/components/About';
 import ProductHighlights from '@/components/ProductHighlights';
 import DemoSection from '@/components/DemoSection';
 import ProductDemo from '@/components/ProductDemo';
+import LatestNews from '@/components/LatestNews';
 import PartnersLogos from '@/components/PartnersLogos';
 import MediaAwards from '@/components/MediaAwards';
 import ContactCTA from '@/components/ContactCTA';
@@ -18,10 +20,12 @@ const Index = () => {
       <Hero />
       <StatsSection />
       <TypeZSection />
+      <FeaturesSection />
       <About />
       <ProductHighlights />
       <DemoSection />
      {/* <ProductDemo /> */}
+      <LatestNews />
       <PartnersLogos />
       <MediaAwards />
       <ContactCTA />

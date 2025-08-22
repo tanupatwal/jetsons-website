@@ -79,11 +79,11 @@ const MediaCarousel = ({
     >
       {/* Main Image Container */}
       <div className="relative overflow-hidden rounded-lg bg-muted/20 cursor-pointer">
-        <div className="aspect-[16/9] flex items-center justify-center">
+        <div className="aspect-[16/9] overflow-hidden">
           <img
             src={images[currentIndex]}
             alt={`Media ${currentIndex + 1}`}
-            className="max-w-full max-h-full object-contain smooth-transition group-hover:scale-105"
+            className="w-full h-full object-cover smooth-transition group-hover:scale-105"
           />
         </div>
 

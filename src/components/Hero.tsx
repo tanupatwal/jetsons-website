@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <section className="w-full">
       {/* Full Screen Video Hero */}
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-screen overflow-hidden bg-black flex items-center justify-center">
         {/* Background Video */}
         <video
           autoPlay
@@ -27,15 +27,20 @@ const Hero = () => {
           muted
           playsInline
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="w-full h-full object-contain max-w-full max-h-full"
           onLoadedData={handleVideoLoad}
           onError={handleVideoError}
           onCanPlay={handleCanPlay}
           onPlay={handlePlay}
           onLoadStart={() => console.log('🔄 Video loading started')}
+          style={{ 
+            aspectRatio: 'auto',
+            objectFit: 'contain',
+            objectPosition: 'center'
+          }}
         >
-          <source src="/top_video/Rooftop.mp4" type="video/mp4" />
-          <source src="./top_video/Rooftop.mp4" type="video/mp4" />
+          <source src="/top_video/jetsons_web_video.mp4" type="video/mp4" />
+          <source src="./top_video/jetsons_web_video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

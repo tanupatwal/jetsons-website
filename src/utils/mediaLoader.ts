@@ -14,9 +14,6 @@ export const loadMediaImages = async (): Promise<MediaItem[]> => {
     
     // All images currently in the media folder (based on directory scan)
     const allImages = [
-      '/media/jetsons_logo.png',
-      '/media/technology.jpg', 
-      '/media/zeros1img3.png',
       '/media/image1.jpg',
       '/media/image2.jpg',
       '/media/image3.jpg',

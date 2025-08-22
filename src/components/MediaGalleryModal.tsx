@@ -25,9 +25,21 @@ const MediaGalleryModal = ({ isOpen, onClose }: MediaGalleryModalProps) => {
       // In a real scenario, you'd fetch this from your backend or use a build-time solution
       // For now, we'll manually add the known images and you can expand this
       const knownImages = [
-        '/media/jetsons_logo.png',
-        '/media/technology.jpg',
-        '/media/zeros1img3.png'
+        '/media/image1.jpg',
+        '/media/image2.jpg',
+        '/media/image3.jpg',
+        '/media/image4.jpg',
+        '/media/image5.jpg',
+        '/media/image6.jpg',
+        '/media/image7.jpg',
+        '/media/image8.jpg',
+        '/media/image9.jpg',
+        '/media/image10.jpg',
+        '/media/image11.jpg',
+        '/media/image12.jpg',
+        '/media/image13.jpg',
+        '/media/image14.jpg',
+        '/media/image15.jpg'
       ];
       
       images.push(...knownImages);
